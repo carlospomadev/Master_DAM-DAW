@@ -630,6 +630,76 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+.aviso-cookies{
+        display: none;
+        background: #fff;
+        padding: 20px;
+        width: 80%;
+        max-width: 300px;
+        line-height: 150%;
+        border-radius: 10px;
+        position: fixed;
+        bottom: 40%;
+        left: 40%;
+        z-index: 100;
+        padding-top: 60px;
+        box-shadow: 0px 2px 20px 10px rgba(222,222,222,25);
+        text-align: center;
+    }
+.aviso-cookies.activo{
+    display: block;
+}
+.aviso-cookies .galleta{
+    max-width: 100%;
+    position: absolute;
+    top: -38%;
+    left: 28%;
+    right: 28%;
+}
+.aviso-cookies .titulo,
+.aviso-cookies .parrafo{
+    margin-bottom: 15px;
+}
+.aviso-cookies .boton-cookies{
+    width: 100%;
+    background: #252a2e;
+    border: none;
+    color: #fff;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 15px 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.aviso-cookies .boton-cookies:hover{
+    background: #1CB698;
+}
+.aviso-cookies .enlace{
+    color: #1CB698;
+    text-decoration: none;
+    font-size: 14px;
+}
+.aviso-cookies .enlace:hover{
+    text-decoration: underline;
+}
+.fondo-aviso-cookies{
+    display: black;
+    background: rgba(0,0,0,.20);
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.fondo-aviso-cookies.activo{
+    display: none;   
+}
+
 /* SECCION RESPONSIVE*/
 @media screen and (max-width: 980px){
     nav{
@@ -652,6 +722,9 @@ footer .arriba{
     nav.responsive ul li{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
+    }
+    .aviso-cookies{
+        width: 100%;
     }
 }
 @media screen and (max-width: 700px){
@@ -692,4 +765,9 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
+    .aviso-cookies{
+        width: fit-content;
+        transform: translate(-36%,-36%)
+    }
+    
 }
