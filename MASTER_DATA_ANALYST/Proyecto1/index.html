@@ -20,18 +20,18 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#sobremi">SOBRE MI</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#curriculum">CURRICULUM</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#contacto">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
-        </header>
+        </header> 
     </div>
     <!--SECCION INICIO-->
     <section id="inicio" class="inicio">
@@ -171,9 +171,9 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Drupa</span>
+                        <span>Drupal</span>
                         <div class="barra-skill">
-                            <div class="progreso drupa">
+                            <div class="progreso drupal">
                                 <span>60%</span>
                             </div>
                         </div>
@@ -384,5 +384,18 @@
             </div>
         </div>
     </section>
+    <!--FOOTER-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-github"></i></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

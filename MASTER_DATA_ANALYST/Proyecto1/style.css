@@ -299,11 +299,11 @@ padding: 15px 20px;
     0%{width: 0%;}
     100%{width: 80%;}    
 }
-.skills .skill .drupa{
+.skills .skill .drupal{
     width: 0%;
-    animation: 2s drupa forwards;
+    animation: 2s drupal forwards;
 }
-@keyframes drupa {
+@keyframes drupal {
     0%{width: 0%;}
     100%{width: 60%;}    
 }
@@ -521,7 +521,7 @@ padding: 15px 20px;
     margin: auto;
 }
 .contacto h2{
-     font-size: 48px;
+    font-size: 48px;
     font-family:'Righteous';
     text-align: center;
     padding: 20px 0;
@@ -531,7 +531,7 @@ padding: 15px 20px;
 }
 .contacto .col{
     width: 50%;
-    padding: 10%;
+    padding: 10px;
     position: relative;
 }
 .contacto .col input, .contacto .col textarea{
@@ -571,20 +571,17 @@ padding: 15px 20px;
     width: 100%;
 }
 .contacto .col img{
-    width: 220%;
-    height: 80%;
-    object-fit: contain;
-   
-
+    width: 100%;
 }
 .contacto .col .info{
-    position: absolute;
-    top: 40%;
+    position:absolute;
+    top: 30%;
     background-color: #252a2e;
     padding: 20px;
-    width: 350px;
+    max-width: 350px;
     left: 50%;
     transform: translate(-50%,-50%);
+    font-size: 11.5px;
 }
 .contacto .col .info ul{
     list-style: none;
@@ -596,4 +593,103 @@ padding: 15px 20px;
     color: #1CB698;
     display: inline-block;
     margin-right: 20px;
+}
+/* FOOTER */
+footer{
+    background-color:#252a2e;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50px;
+    line-height: 50px;
+    font-size: 18px;
+}
+/* SECCION RESPONSIVE*/
+@media screen and (max-width: 980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252a2e;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width: 700px){
+    .sobremi .fila{
+        display: block
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum.fila .derecha{
+        margin-left: 20px;
+    }
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
 }
