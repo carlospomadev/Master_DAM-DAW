@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url(fuentes/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Righteous';
+    src: url(fuentes/Righteous/Righteous-Regular.ttf);
+}
 *{
     box-sizing: border-box;
     font-family: 'Work Sans';
@@ -283,27 +291,27 @@ padding: 15px 20px;
     0%{width: 0%;}
     100%{width: 75%;}    
 }
-.skills .skill .photoshop{
+.skills .skill .Java{
     width: 0%;
-    animation: 2s photoshop forwards;
+    animation: 2s Java forwards;
 }
-@keyframes photoshop {
+@keyframes Java {
     0%{width: 0%;}
     100%{width: 80%;}    
 }
-.skills .skill .wordpress{
+.skills .skill .python{
     width: 0%;
-    animation: 2s wordpress forwards;
+    animation: 2s python forwards;
 }
-@keyframes wordpress {
+@keyframes python {
     0%{width: 0%;}
     100%{width: 80%;}    
 }
-.skills .skill .drupal{
+.skills .skill .sql{
     width: 0%;
-    animation: 2s drupal forwards;
+    animation: 2s sql forwards;
 }
-@keyframes drupal {
+@keyframes sql {
     0%{width: 0%;}
     100%{width: 60%;}    
 }
@@ -643,7 +651,7 @@ footer .arriba{
         left: 40%;
         z-index: 100;
         padding-top: 60px;
-        box-shadow: 0px 2px 20px 10px rgba(222,222,222,25);
+        box-shadow: 0px 2px 20px 10px rgba(113, 120, 106, 0.08);
         text-align: center;
     }
 .aviso-cookies.activo{
@@ -665,7 +673,7 @@ footer .arriba{
     background: #252a2e;
     border: none;
     color: #fff;
-    font-family: 'Righteous';
+    font-family: 'Work Sans';
     text-align: center;
     padding: 15px 20px;
     font-weight: 700;
@@ -766,8 +774,8 @@ footer .arriba{
         width: 100%;
     }
     .aviso-cookies{
-        width: fit-content;
-        transform: translate(-36%,-36%)
+        width: 100%;
+        transform: translate(-100px, 0)
     }
     
 }
